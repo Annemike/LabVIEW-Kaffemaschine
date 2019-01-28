@@ -1,2 +1,2 @@
 # LabVIEW-Kaffemaschine
-balbalbal
+LabVIEW-Kaffemaschine Projekt TU DarmstadtS
