@@ -4,6 +4,7 @@
 	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Property Name="varPersistentID:{194E0B31-7923-4CA5-BE41-6BF3B7DB6661}" Type="Ref">/myRIO-1900/Untitled Library 1.lvlib/Kaffe Level</Property>
 	<Property Name="varPersistentID:{1D9268B4-EED3-4059-90CE-782EBC712C1D}" Type="Ref">/myRIO-1900/Untitled Library 1.lvlib/Druck</Property>
+	<Property Name="varPersistentID:{3F4A5454-41BD-4D8B-96F1-7C36F88C68CE}" Type="Ref">/myRIO-1900/Untitled Library 1.lvlib/CMD_FIFO</Property>
 	<Property Name="varPersistentID:{400F68A4-26BB-445B-9E56-BDFE1E155B41}" Type="Ref">/myRIO-1900/Untitled Library 1.lvlib/Temperatur</Property>
 	<Property Name="varPersistentID:{4EB3DEC1-890A-4F21-9FB1-D04EA661C721}" Type="Ref">/myRIO-1900/Untitled Library 1.lvlib/Wasser Level</Property>
 	<Item Name="My Computer" Type="My Computer">
@@ -30,6 +31,7 @@
 			</Item>
 			<Item Name="myRIO Project Documentation.html" Type="Document" URL="../documentation/myRIO Project Documentation.html"/>
 		</Item>
+		<Item Name="[PC]Main.vi" Type="VI" URL="../PC/[PC]Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -97,6 +99,11 @@
 		<Item Name="Distance_Switch.vi" Type="VI" URL="../Distance_Switch.vi"/>
 		<Item Name="Tuerschalter_Hinten.vi" Type="VI" URL="../Tuerschalter_Hinten.vi"/>
 		<Item Name="Switch_2_Lichtschranke.vi" Type="VI" URL="../Switch_2_Lichtschranke.vi"/>
+		<Item Name="ControllerState.ctl" Type="VI" URL="../TypeDef/ControllerState.ctl"/>
+		<Item Name="CMD Cluster.ctl" Type="VI" URL="../TypeDef/CMD Cluster.ctl"/>
+		<Item Name="[RT]GetStateRQST.vi" Type="VI" URL="../RT/[RT]GetStateRQST.vi"/>
+		<Item Name="[GlobVar]Param.vi" Type="VI" URL="../RT/[GlobVar]Param.vi"/>
+		<Item Name="[GlobVar]SensorState.vi" Type="VI" URL="../RT/[GlobVar]SensorState.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AI IRQ FPGA Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/AI IRQ FPGA Reference.ctl"/>
