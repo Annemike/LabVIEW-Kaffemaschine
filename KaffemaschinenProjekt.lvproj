@@ -92,6 +92,7 @@
 		<Item Name="Untitled Library 1.lvlib" Type="Library" URL="../Untitled Library 1.lvlib"/>
 		<Item Name="Drucksensor.vi" Type="VI" URL="../Drucksensor.vi"/>
 		<Item Name="Fuellstandsschalter.vi" Type="VI" URL="../Fuellstandsschalter.vi"/>
+		<Item Name="Tuerschalter_Oben.vi" Type="VI" URL="../Tuerschalter_Oben.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AI IRQ FPGA Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/AI IRQ FPGA Reference.ctl"/>
