@@ -1,5 +1,9 @@
 [My Computer]
+<<<<<<< HEAD
 My Computer = "172.18.73.92"
+=======
+My Computer = "172.18.92.112"
+>>>>>>> 12f43ac75475e2c802e3ba47c81370c53229139c
 
 [myRIO-1900]
 myRIO-1900 = "0.0.0.0"
