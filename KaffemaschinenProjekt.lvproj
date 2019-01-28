@@ -96,6 +96,7 @@
 		<Item Name="IngenieursAnsicht.vi" Type="VI" URL="../IngenieursAnsicht.vi"/>
 		<Item Name="Distance_Switch.vi" Type="VI" URL="../Distance_Switch.vi"/>
 		<Item Name="Tuerschalter_Hinten.vi" Type="VI" URL="../Tuerschalter_Hinten.vi"/>
+		<Item Name="Switch_2_Lichtschranke.vi" Type="VI" URL="../Switch_2_Lichtschranke.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AI IRQ FPGA Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/AI IRQ FPGA Reference.ctl"/>
