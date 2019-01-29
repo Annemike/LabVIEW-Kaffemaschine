@@ -7,6 +7,7 @@
 	<Property Name="varPersistentID:{3F4A5454-41BD-4D8B-96F1-7C36F88C68CE}" Type="Ref">/myRIO-1900/SharedVar.lvlib/CMD_FIFO</Property>
 	<Property Name="varPersistentID:{400F68A4-26BB-445B-9E56-BDFE1E155B41}" Type="Ref">/myRIO-1900/SharedVar.lvlib/Temperatur</Property>
 	<Property Name="varPersistentID:{4EB3DEC1-890A-4F21-9FB1-D04EA661C721}" Type="Ref">/myRIO-1900/SharedVar.lvlib/Wasser Level</Property>
+	<Property Name="varPersistentID:{E9F9AB50-0AA1-42FF-83B0-6FD3F5C96D1B}" Type="Ref">/myRIO-1900/SharedVar.lvlib/Volumen</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="IOScan.Faults" Type="Str"></Property>
 		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
@@ -116,6 +117,7 @@
 		<Item Name="Tuerschalter_Hinten.vi" Type="VI" URL="../Tuerschalter_Hinten.vi"/>
 		<Item Name="Switch_2_Lichtschranke.vi" Type="VI" URL="../Switch_2_Lichtschranke.vi"/>
 		<Item Name="SharedVar.lvlib" Type="Library" URL="../SharedVar.lvlib"/>
+		<Item Name="[RT]CTRL_Heater.vi" Type="VI" URL="../RT/[RT]CTRL_Heater.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>

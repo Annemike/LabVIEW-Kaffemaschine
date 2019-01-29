@@ -21,7 +21,7 @@
 		<Property Name="typedefName2" Type="Str">ControllerState.ctl</Property>
 		<Property Name="typedefPath1" Type="PathRel">../TypeDef/CMD Cluster.ctl</Property>
 		<Property Name="typedefPath2" Type="PathRel">../TypeDef/ControllerState.ctl</Property>
-		<Property Name="typeDesc" Type="Bin">'!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$&amp;Q1!!!"A!A!!!!!!%!&amp;5!]1!!!!!!!!!"%U.P&lt;H2S&lt;WRM:8*4&gt;'&amp;U:3ZD&gt;'Q!/5!7!!1%372M:1:):7F[:7Y'5(6N='6O$E6N:8*H:7ZD?3V4&gt;'^Q!!J4&gt;'&amp;U:3"3=8.U!!!01!=!#82J&lt;76T&gt;'&amp;N=!!,1!I!"(2F&lt;8!!!$1!]1!!!!!!!!!"$U..2#"$&lt;(6T&gt;'6S,G.U&lt;!!=1&amp;!!!Q!!!!%!!AN$451A1WRV=X2F=A!"!!-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
+		<Property Name="typeDesc" Type="Bin">'!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$M[!!!!"A!A!!!!!!&amp;!!^!"Q!*&gt;'FN:8.U97VQ!&amp;E!]1!!!!!!!!!"%U.P&lt;H2S&lt;WRM:8*4&gt;'&amp;U:3ZD&gt;'Q!05!7!!1%372M:1F7&lt;X*I:7F[:7Y'1H,];'6O$E6N:8*H:7ZD?3V4&gt;'^Q!!!+5X2B&gt;'5A5H&amp;T&gt;!!!%5!+!!NU98*H:81N&gt;'6N=!!41!I!$82B=G&gt;F&gt;#VW&lt;WRV&lt;75!.A$R!!!!!!!!!!%01UV%)%.M&gt;8.U:8)O9X2M!"Z!5!!%!!!!!1!#!!-,1UV%)%.M&gt;8.U:8)!!1!%!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
 	</Item>
 	<Item Name="Druck" Type="Variable">
 		<Property Name="featurePacks" Type="Str">Network</Property>
@@ -46,6 +46,15 @@
 		<Property Name="Network:UseBinding" Type="Str">False</Property>
 		<Property Name="Network:UseBuffering" Type="Str">False</Property>
 		<Property Name="numTypedefs" Type="UInt">0</Property>
+		<Property Name="type" Type="Str">Network</Property>
+		<Property Name="typeDesc" Type="Bin">'!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!!J*1!!!"A!A!!!!!!"!!V!#A!'2'^V9GRF!!!"!!!!!!!!!!!!!!!!!!!!!!!!</Property>
+	</Item>
+	<Item Name="Volumen" Type="Variable">
+		<Property Name="featurePacks" Type="Str">Network</Property>
+		<Property Name="Network:UseBinding" Type="Str">False</Property>
+		<Property Name="Network:UseBuffering" Type="Str">False</Property>
+		<Property Name="numTypedefs" Type="UInt">0</Property>
+		<Property Name="Path" Type="Str">/KaffemaschinenProjekt.lvproj/myRIO-1900/SharedVar.lvlib/</Property>
 		<Property Name="type" Type="Str">Network</Property>
 		<Property Name="typeDesc" Type="Bin">'!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!!J*1!!!"A!A!!!!!!"!!V!#A!'2'^V9GRF!!!"!!!!!!!!!!!!!!!!!!!!!!!!</Property>
 	</Item>
