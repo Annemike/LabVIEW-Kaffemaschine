@@ -2,12 +2,20 @@
 <Project Type="Project" LVVersion="18008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
-	<Property Name="varPersistentID:{194E0B31-7923-4CA5-BE41-6BF3B7DB6661}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/Kaffe Level</Property>
-	<Property Name="varPersistentID:{1D9268B4-EED3-4059-90CE-782EBC712C1D}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/Druck</Property>
+	<Property Name="varPersistentID:{1D9268B4-EED3-4059-90CE-782EBC712C1D}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/Current Pressure (psi)</Property>
+	<Property Name="varPersistentID:{2F1E569C-74B6-437A-A3DC-DD97E55D5FC4}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/LevelSwitch-1</Property>
+	<Property Name="varPersistentID:{333B6DC7-1DE2-48DD-9BB6-F80F6229DF86}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/State_Current</Property>
 	<Property Name="varPersistentID:{3F4A5454-41BD-4D8B-96F1-7C36F88C68CE}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/CMD_FIFO</Property>
-	<Property Name="varPersistentID:{400F68A4-26BB-445B-9E56-BDFE1E155B41}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/Temperatur</Property>
-	<Property Name="varPersistentID:{4EB3DEC1-890A-4F21-9FB1-D04EA661C721}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/Wasser Level</Property>
-	<Property Name="varPersistentID:{E9F9AB50-0AA1-42FF-83B0-6FD3F5C96D1B}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/Volumen</Property>
+	<Property Name="varPersistentID:{400F68A4-26BB-445B-9E56-BDFE1E155B41}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/Current Temp</Property>
+	<Property Name="varPersistentID:{5040677D-1927-403E-B9A5-03536E32EDD2}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/Pump_ON</Property>
+	<Property Name="varPersistentID:{9B60CCD4-0397-4D9F-A8CC-F0595C4997D6}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/Ventil_OPEN</Property>
+	<Property Name="varPersistentID:{A9F1ABEC-0843-4AAD-A32E-CFDB2E708A54}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/Switch-3 (Tür Hinten)</Property>
+	<Property Name="varPersistentID:{BF99CF74-6904-4DAA-A557-34753EE6C979}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/PumpVolume_Reached</Property>
+	<Property Name="varPersistentID:{C07734A7-2813-477E-BE6E-5404BAC417C9}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/HeaterTemp_Reached</Property>
+	<Property Name="varPersistentID:{C7E02D2D-B166-4B80-B3C3-D5B3DDCB3ADC}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/Switch-2 (Lichtschranke)</Property>
+	<Property Name="varPersistentID:{E9289FFA-493C-4F9A-ABCE-44551E51A625}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/Heater_ON</Property>
+	<Property Name="varPersistentID:{E9D27901-408D-4F85-88C1-450C54356256}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/Switch-4 (Wartungsklappe)</Property>
+	<Property Name="varPersistentID:{E9F9AB50-0AA1-42FF-83B0-6FD3F5C96D1B}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/Current Volume (ml)</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="IOScan.Faults" Type="Str"></Property>
 		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
@@ -32,9 +40,11 @@
 			</Item>
 			<Item Name="myRIO Project Documentation.html" Type="Document" URL="../documentation/myRIO Project Documentation.html"/>
 		</Item>
+		<Item Name="[GlobVar]SensorState.vi" Type="VI" URL="../RT/[GlobVar]SensorState.vi"/>
 		<Item Name="[PC]MainGUI_Engineering.vi" Type="VI" URL="../PC/[PC]MainGUI_Engineering.vi"/>
 		<Item Name="[PC]MainGUI_User.vi" Type="VI" URL="../PC/[PC]MainGUI_User.vi"/>
 		<Item Name="[PC]SendCMD.vi" Type="VI" URL="../PC/[PC]SendCMD.vi"/>
+		<Item Name="[PC]UpdateGlobVar.vi" Type="VI" URL="../PC/[PC]UpdateGlobVar.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="CMD Cluster.ctl" Type="VI" URL="../TypeDef/CMD Cluster.ctl"/>
 			<Item Name="ControllerState.ctl" Type="VI" URL="../TypeDef/ControllerState.ctl"/>
