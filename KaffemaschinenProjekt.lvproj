@@ -116,6 +116,7 @@
 		<Item Name="[RT]Read_Flow.vi" Type="VI" URL="../[RT]Read_Flow.vi"/>
 		<Item Name="[RT]Actuation.vi" Type="VI" URL="../RT/[RT]Actuation.vi"/>
 		<Item Name="[RT]Loop_Display.vi" Type="VI" URL="../RT/[RT]Loop_Display.vi"/>
+		<Item Name="[RT]NTC_Temp.vi" Type="VI" URL="../RT/[RT]NTC_Temp.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
