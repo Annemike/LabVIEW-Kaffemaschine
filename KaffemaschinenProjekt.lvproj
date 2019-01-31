@@ -41,11 +41,21 @@
 			<Item Name="myRIO Project Documentation.html" Type="Document" URL="../documentation/myRIO Project Documentation.html"/>
 		</Item>
 		<Item Name="[GlobVar]SensorState.vi" Type="VI" URL="../RT/[GlobVar]SensorState.vi"/>
+		<Item Name="[PC]Log_GetLogFileName.vi" Type="VI" URL="../PC/[PC]Log_GetLogFileName.vi"/>
+		<Item Name="[PC]LogGlobVar.vi" Type="VI" URL="../PC/[PC]LogGlobVar.vi"/>
+		<Item Name="[PC]LogSnapshot.vi" Type="VI" URL="../PC/[PC]LogSnapshot.vi"/>
 		<Item Name="[PC]MainGUI_Engineering.vi" Type="VI" URL="../PC/[PC]MainGUI_Engineering.vi"/>
 		<Item Name="[PC]MainGUI_User.vi" Type="VI" URL="../PC/[PC]MainGUI_User.vi"/>
 		<Item Name="[PC]SendCMD.vi" Type="VI" URL="../PC/[PC]SendCMD.vi"/>
 		<Item Name="[PC]UpdateGlobVar.vi" Type="VI" URL="../PC/[PC]UpdateGlobVar.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="vi.lib" Type="Folder">
+				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
+				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
+				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
+				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
+				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
+			</Item>
 			<Item Name="CMD Cluster.ctl" Type="VI" URL="../TypeDef/CMD Cluster.ctl"/>
 			<Item Name="ControllerState.ctl" Type="VI" URL="../TypeDef/ControllerState.ctl"/>
 		</Item>
