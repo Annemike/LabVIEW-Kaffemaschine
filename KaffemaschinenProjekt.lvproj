@@ -6,13 +6,19 @@
 	<Property Name="varPersistentID:{2F1E569C-74B6-437A-A3DC-DD97E55D5FC4}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/LevelSwitch-1</Property>
 	<Property Name="varPersistentID:{333B6DC7-1DE2-48DD-9BB6-F80F6229DF86}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/State_Current</Property>
 	<Property Name="varPersistentID:{3F4A5454-41BD-4D8B-96F1-7C36F88C68CE}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/CMD_FIFO</Property>
-	<Property Name="varPersistentID:{400F68A4-26BB-445B-9E56-BDFE1E155B41}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/Current Temp</Property>
 	<Property Name="varPersistentID:{5040677D-1927-403E-B9A5-03536E32EDD2}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/Pump_ON</Property>
+	<Property Name="varPersistentID:{5159323E-0DB3-4182-BD7B-C47FCF6F3AEC}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/BME_Pressure</Property>
+	<Property Name="varPersistentID:{74C6D69B-B600-42E1-93D8-D257F4063DB0}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/Temp_NTC</Property>
+	<Property Name="varPersistentID:{962574DD-B27C-4950-B195-0C5C4927BD73}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/Temp_PT100</Property>
 	<Property Name="varPersistentID:{9B60CCD4-0397-4D9F-A8CC-F0595C4997D6}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/Ventil_OPEN</Property>
+	<Property Name="varPersistentID:{A705141E-CD51-45B8-9D4F-5BCD6AAD563C}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/BME_Humid</Property>
 	<Property Name="varPersistentID:{A9F1ABEC-0843-4AAD-A32E-CFDB2E708A54}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/Switch-3 (Tür Hinten)</Property>
 	<Property Name="varPersistentID:{BF99CF74-6904-4DAA-A557-34753EE6C979}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/PumpVolume_Reached</Property>
 	<Property Name="varPersistentID:{C07734A7-2813-477E-BE6E-5404BAC417C9}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/HeaterTemp_Reached</Property>
 	<Property Name="varPersistentID:{C7E02D2D-B166-4B80-B3C3-D5B3DDCB3ADC}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/Switch-2 (Lichtschranke)</Property>
+	<Property Name="varPersistentID:{CEE6288A-972D-4A84-8C18-AA5163A94D2A}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/BME_Temp</Property>
+	<Property Name="varPersistentID:{D002E624-DDB8-45F8-AD2B-E3C4B13005ED}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/NFC</Property>
+	<Property Name="varPersistentID:{D0F16A5F-6208-496E-B0E0-C736192D43D0}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/Temp_TC</Property>
 	<Property Name="varPersistentID:{E9289FFA-493C-4F9A-ABCE-44551E51A625}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/Heater_ON</Property>
 	<Property Name="varPersistentID:{E9D27901-408D-4F85-88C1-450C54356256}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/Switch-4 (Wartungsklappe)</Property>
 	<Property Name="varPersistentID:{E9F9AB50-0AA1-42FF-83B0-6FD3F5C96D1B}" Type="Ref">/myRIO-1900/GlobVar/SharedVar.lvlib/Current Volume (ml)</Property>
@@ -128,17 +134,17 @@
 			<Item Name="TEC-Convert-Bytes.vi" Type="VI" URL="../TEC-Convert-Bytes.vi"/>
 		</Item>
 		<Item Name="Sense+Act" Type="Folder">
+			<Item Name="[RT]NFC-Main.vi" Type="VI" URL="../RT/[RT]NFC-Main.vi"/>
 			<Item Name="[RT]ReadDigitalInput.vi" Type="VI" URL="../RT/[RT]ReadDigitalInput.vi"/>
 			<Item Name="[RT]Read_TC_Temp2.vi" Type="VI" URL="../RT/[RT]Read_TC_Temp2.vi"/>
-			<Item Name="[RT]Read_Flow.vi" Type="VI" URL="../[RT]Read_Flow.vi"/>
+			<Item Name="[RT]Read_Flow.vi" Type="VI" URL="../RT/[RT]Read_Flow.vi"/>
 			<Item Name="[RT]NTC_Temp.vi" Type="VI" URL="../RT/[RT]NTC_Temp.vi"/>
-			<Item Name="Temperaturmessung PT100.vi" Type="VI" URL="../Temperaturmessung PT100.vi"/>
+			<Item Name="[RT]Read_pt100.vi" Type="VI" URL="../RT/[RT]Read_pt100.vi"/>
 			<Item Name="Read-CompCoeffs.vi" Type="VI" URL="../BME280/Read-CompCoeffs.vi"/>
 			<Item Name="Read-Humidity.vi" Type="VI" URL="../BME280/Read-Humidity.vi"/>
 			<Item Name="Read-Pressure.vi" Type="VI" URL="../BME280/Read-Pressure.vi"/>
 			<Item Name="Read-Temp.vi" Type="VI" URL="../BME280/Read-Temp.vi"/>
-			<Item Name="BME280_Temp_Druck_Feuchtigkeit VI.vi" Type="VI" URL="../BME280/BME280_Temp_Druck_Feuchtigkeit VI.vi"/>
-			<Item Name="BME280-FormulaNode_Compensation.vi" Type="VI" URL="../BME280/BME280-FormulaNode_Compensation.vi"/>
+			<Item Name="[RT]Read_BME.vi" Type="VI" URL="../RT/[RT]Read_BME.vi"/>
 			<Item Name="[RT]Read_PressureSensor.vi" Type="VI" URL="../RT/[RT]Read_PressureSensor.vi"/>
 			<Item Name="Conf-Sensor.vi" Type="VI" URL="../BME280/Conf-Sensor.vi"/>
 			<Item Name="[RT]Actuation.vi" Type="VI" URL="../RT/[RT]Actuation.vi"/>
@@ -152,6 +158,7 @@
 		<Item Name="[RT]Loop_Recieve.vi" Type="VI" URL="../RT/[RT]Loop_Recieve.vi"/>
 		<Item Name="[RT]Loop_Controller.vi" Type="VI" URL="../RT/[RT]Loop_Controller.vi"/>
 		<Item Name="[RT]Loop_Display.vi" Type="VI" URL="../RT/[RT]Loop_Display.vi"/>
+		<Item Name="[RT]SafetyCheck.vi" Type="VI" URL="../RT/[RT]SafetyCheck.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
@@ -352,22 +359,50 @@
 				<Item Name="roboRIO v1.0 Write I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/roboRIO v1.0/I2C/vis/roboRIO v1.0 Write I2C.vi"/>
 				<Item Name="roboRIO I2C Channels FPGA Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/roboRIO v1.0/I2C/typedefs/roboRIO I2C Channels FPGA Reference.ctl"/>
 				<Item Name="roboRIO v1.0 Read I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/roboRIO v1.0/I2C/vis/roboRIO v1.0 Read I2C.vi"/>
-				<Item Name="myRIO v1.1 Open I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/common/Instrument Driver Framework/myRIO v1.0/I2C/vis/myRIO v1.1 Open I2C.vi"/>
-				<Item Name="myRIO v1.1 I2C Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/common/Instrument Driver Framework/myRIO v1.0/I2C/typedefs/myRIO v1.1 I2C Channels Enum.ctl"/>
-				<Item Name="myRIO v1.0 Reserve I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/common/Instrument Driver Framework/myRIO v1.0/I2C/vis/myRIO v1.0 Reserve I2C.vi"/>
-				<Item Name="myRIO v1.0 Build MUX Configuration I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/common/Instrument Driver Framework/myRIO v1.0/I2C/vis/myRIO v1.0 Build MUX Configuration I2C.vi"/>
-				<Item Name="myRIO v1.0 Configure I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/common/Instrument Driver Framework/myRIO v1.0/I2C/vis/myRIO v1.0 Configure I2C.vi"/>
-				<Item Name="roboRIO v1.0 Configure I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/common/Instrument Driver Framework/roboRIO v1.0/I2C/vis/roboRIO v1.0 Configure I2C.vi"/>
-				<Item Name="myRIO v1.0 Close I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/common/Instrument Driver Framework/myRIO v1.0/I2C/vis/myRIO v1.0 Close I2C.vi"/>
-				<Item Name="myRIO v1.0 Unreserve I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/common/Instrument Driver Framework/myRIO v1.0/I2C/vis/myRIO v1.0 Unreserve I2C.vi"/>
-				<Item Name="myRIO v1.0 Shutdown I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/common/Instrument Driver Framework/myRIO v1.0/I2C/vis/myRIO v1.0 Shutdown I2C.vi"/>
-				<Item Name="roboRIO v1.0 Close I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/common/Instrument Driver Framework/roboRIO v1.0/I2C/vis/roboRIO v1.0 Close I2C.vi"/>
-				<Item Name="roboRIO v1.0 Unreserve I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/common/Instrument Driver Framework/roboRIO v1.0/I2C/vis/roboRIO v1.0 Unreserve I2C.vi"/>
-				<Item Name="roboRIO v1.0 Build MUX Configuration I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/common/Instrument Driver Framework/roboRIO v1.0/I2C/vis/roboRIO v1.0 Build MUX Configuration I2C.vi"/>
-				<Item Name="roboRIO v1.0 Shutdown I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/common/Instrument Driver Framework/roboRIO v1.0/I2C/vis/roboRIO v1.0 Shutdown I2C.vi"/>
-				<Item Name="ELVIS III v1.0 Close I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/common/Instrument Driver Framework/ELVIS III v1.0/I2C/vis/ELVIS III v1.0 Close I2C.vi"/>
-				<Item Name="ELVIS III v1.0 Unreserve I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/common/Instrument Driver Framework/ELVIS III v1.0/I2C/vis/ELVIS III v1.0 Unreserve I2C.vi"/>
-				<Item Name="ELVIS III v1.0 Build MUX Configuration I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/common/Instrument Driver Framework/ELVIS III v1.0/I2C/vis/ELVIS III v1.0 Build MUX Configuration I2C.vi"/>
+				<Item Name="myRIO v1.1 Open I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/I2C/vis/myRIO v1.1 Open I2C.vi"/>
+				<Item Name="myRIO v1.1 I2C Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/I2C/typedefs/myRIO v1.1 I2C Channels Enum.ctl"/>
+				<Item Name="myRIO v1.0 Reserve I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/I2C/vis/myRIO v1.0 Reserve I2C.vi"/>
+				<Item Name="myRIO v1.0 Build MUX Configuration I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/I2C/vis/myRIO v1.0 Build MUX Configuration I2C.vi"/>
+				<Item Name="myRIO v1.0 Configure I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/I2C/vis/myRIO v1.0 Configure I2C.vi"/>
+				<Item Name="roboRIO v1.0 Configure I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/roboRIO v1.0/I2C/vis/roboRIO v1.0 Configure I2C.vi"/>
+				<Item Name="myRIO v1.0 Close I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/I2C/vis/myRIO v1.0 Close I2C.vi"/>
+				<Item Name="myRIO v1.0 Unreserve I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/I2C/vis/myRIO v1.0 Unreserve I2C.vi"/>
+				<Item Name="myRIO v1.0 Shutdown I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/I2C/vis/myRIO v1.0 Shutdown I2C.vi"/>
+				<Item Name="roboRIO v1.0 Close I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/roboRIO v1.0/I2C/vis/roboRIO v1.0 Close I2C.vi"/>
+				<Item Name="roboRIO v1.0 Unreserve I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/roboRIO v1.0/I2C/vis/roboRIO v1.0 Unreserve I2C.vi"/>
+				<Item Name="roboRIO v1.0 Build MUX Configuration I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/roboRIO v1.0/I2C/vis/roboRIO v1.0 Build MUX Configuration I2C.vi"/>
+				<Item Name="roboRIO v1.0 Shutdown I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/roboRIO v1.0/I2C/vis/roboRIO v1.0 Shutdown I2C.vi"/>
+				<Item Name="ELVIS III v1.0 Close I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/ELVIS III v1.0/I2C/vis/ELVIS III v1.0 Close I2C.vi"/>
+				<Item Name="ELVIS III v1.0 Unreserve I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/ELVIS III v1.0/I2C/vis/ELVIS III v1.0 Unreserve I2C.vi"/>
+				<Item Name="ELVIS III v1.0 Build MUX Configuration I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/ELVIS III v1.0/I2C/vis/ELVIS III v1.0 Build MUX Configuration I2C.vi"/>
+				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
+				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
+				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
+				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
+				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
+				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
+				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
+				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
+				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
+				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
+				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi"/>
+				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
+				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
+				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
+				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
+				<Item Name="ErrWarn.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/ErrWarn.ctl"/>
+				<Item Name="eventvkey.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/eventvkey.ctl"/>
+				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
+				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
+				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
+				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
+				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
+				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
+				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
+				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi"/>
+				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
+				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
+				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
 			</Item>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -375,6 +410,10 @@
 			<Item Name="rioembeddedcanlvapi.dll" Type="Document" URL="rioembeddedcanlvapi.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="SendandCheckAck.vi" Type="VI" URL="../NFC/SendandCheckAck.vi"/>
+			<Item Name="WaitForIRQwithTimeout.vi" Type="VI" URL="../NFC/WaitForIRQwithTimeout.vi"/>
+			<Item Name="ReadTag.vi" Type="VI" URL="../NFC/ReadTag.vi"/>
+			<Item Name="ConvertTagReadToInfo.vi" Type="VI" URL="../NFC/ConvertTagReadToInfo.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
