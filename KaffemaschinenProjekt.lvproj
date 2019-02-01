@@ -188,6 +188,7 @@ AddOutputFilter chunkFilter
 		<Item Name="[RT]Loop_Controller.vi" Type="VI" URL="../RT/[RT]Loop_Controller.vi"/>
 		<Item Name="[RT]Loop_Display.vi" Type="VI" URL="../RT/[RT]Loop_Display.vi"/>
 		<Item Name="[RT]SafetyCheck.vi" Type="VI" URL="../RT/[RT]SafetyCheck.vi"/>
+		<Item Name="[RT]NTC_calc.vi" Type="VI" URL="../RT/[RT]NTC_calc.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
