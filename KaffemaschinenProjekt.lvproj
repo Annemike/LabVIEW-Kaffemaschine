@@ -172,11 +172,11 @@ AddOutputFilter chunkFilter
 			<Item Name="Read-Humidity.vi" Type="VI" URL="../BME280/Read-Humidity.vi"/>
 			<Item Name="Read-Pressure.vi" Type="VI" URL="../BME280/Read-Pressure.vi"/>
 			<Item Name="Read-Temp.vi" Type="VI" URL="../BME280/Read-Temp.vi"/>
-			<Item Name="[RT]Read_BME.vi" Type="VI" URL="../RT/[RT]Read_BME.vi"/>
 			<Item Name="[RT]Read_PressureSensor.vi" Type="VI" URL="../RT/[RT]Read_PressureSensor.vi"/>
 			<Item Name="Conf-Sensor.vi" Type="VI" URL="../BME280/Conf-Sensor.vi"/>
 			<Item Name="[RT]Actuation.vi" Type="VI" URL="../RT/[RT]Actuation.vi"/>
 			<Item Name="[RT]DisplayMain.vi" Type="VI" URL="../[RT]DisplayMain.vi"/>
+			<Item Name="[RT]Read_I2C.vi" Type="VI" URL="../RT/[RT]Read_I2C.vi"/>
 		</Item>
 		<Item Name="Plan" Type="Folder">
 			<Item Name="[RT]CTRL_Heater.vi" Type="VI" URL="../RT/[RT]CTRL_Heater.vi"/>
@@ -448,7 +448,6 @@ AddOutputFilter chunkFilter
 			<Item Name="ReadTag.vi" Type="VI" URL="../NFC/ReadTag.vi"/>
 			<Item Name="ConvertTagReadToInfo.vi" Type="VI" URL="../NFC/ConvertTagReadToInfo.vi"/>
 			<Item Name="Display-Message.vi" Type="VI" URL="../Display VI/Display-Message.vi"/>
-			<Item Name="[RT]Read_I2C.vi" Type="VI" URL="../RT/[RT]Read_I2C.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
