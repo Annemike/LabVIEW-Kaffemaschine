@@ -448,6 +448,7 @@ AddOutputFilter chunkFilter
 			<Item Name="ReadTag.vi" Type="VI" URL="../NFC/ReadTag.vi"/>
 			<Item Name="ConvertTagReadToInfo.vi" Type="VI" URL="../NFC/ConvertTagReadToInfo.vi"/>
 			<Item Name="Display-Message.vi" Type="VI" URL="../Display VI/Display-Message.vi"/>
+			<Item Name="[RT]Read_I2C.vi" Type="VI" URL="../RT/[RT]Read_I2C.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
